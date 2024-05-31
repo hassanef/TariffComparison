@@ -2,8 +2,8 @@
 {
     public class BasicElectricityTariff : TariffProduct
     {
-        public Cost BaseCost { get; init; }
-        public Cost AdditionalKwhCost { get; init; }
+        public required Cost BaseCost { get; init; }
+        public required Cost AdditionalKwhCost { get; init; }
 
         public override decimal CalculateAnnualCost(int annualConsumption)
         {
